@@ -6,7 +6,7 @@ require('dotenv').config();
 const { connectDB } = require('./helpers/conn');
 const { routes } =  require('./routes');
 
-const port = process.env.PORT | 3001;
+const port = process.env.PORT || 8080;
 const urlDb =  process.env.URL_DB_CONNECTION;
 
 //-- set Properties of request
